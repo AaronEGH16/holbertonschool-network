@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#lists all active TCP connections on the system,
+#displaying the details in numerical format.
+netstat -an -p tcp
