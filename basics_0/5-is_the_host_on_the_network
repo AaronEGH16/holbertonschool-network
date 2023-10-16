@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #Verify that only one IP address is passed
 #and verify your connection by sending 5 packets
-if [$# -ne 1]; then
+if [ "$#" -ne 1 ]; then
     echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
     exit 1
 fi
-ping $1 -c5
+ping "$1" -c5
